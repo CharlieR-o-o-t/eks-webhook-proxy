@@ -1,0 +1,7 @@
+apiVersion: v2
+name: eks-webhook-proxy
+description: A Helm chart for eks-webhook-proxy
+
+type: application
+version: 0.0.2
+appVersion: v0.0.2

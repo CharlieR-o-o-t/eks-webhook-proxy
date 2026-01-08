@@ -1,0 +1,52 @@
+# Default values for ingress-webhook.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: artifactory.wgdp.io/kind-docker/eks-webhook-proxy
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+options:
+  verbosityLevel: 3
+  webhookRestricted: true
+  webhookAllowedCIDRS: []
+
+serviceAccount:
+  create: true
+
+podSecurityContext: 
+  runAsUser: 1000
+  runAsNonRoot: true
+
+securityContext: 
+  runAsUser: 1000
+  runAsNonRoot: true
+
+resources:
+  limits:
+    memory: 256Mi
+  requests:
+    memory: 256Mi
+
+tolerations:
+  - key: CriticalAddonsOnly
+    operator: Exists
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/system-nodegroup
+  - effect: NoSchedule
+    key: node.kubernetes.io/not-ready
+
+affinity: {}
+
+nodeSelector:
+  node.kubernetes.io/system: ""
+
+podAnnotations: {}
+
+customLabels: {}
