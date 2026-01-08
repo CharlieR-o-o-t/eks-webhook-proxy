@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/utils"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/utils"
 
 	"github.com/go-logr/logr"
 	v1 "k8s.io/api/core/v1"

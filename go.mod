@@ -1,4 +1,4 @@
-module gitlab.wgdp.io/k8s/eks-webhook-proxy
+module github.com/CharlieR-o-o-t/eks-webhook-proxy
 
 go 1.24.0
 

@@ -7,8 +7,8 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"github.com/go-logr/logr"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/nodecache"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/config"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/nodecache"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/config"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 )

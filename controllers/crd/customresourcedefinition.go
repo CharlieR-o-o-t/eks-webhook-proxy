@@ -3,9 +3,9 @@ package crd
 import (
 	"context"
 	"github.com/go-logr/logr"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/config"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/proxy"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/utils"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/config"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/proxy"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/utils"
 	admissionv1 "k8s.io/api/admissionregistration/v1"
 	apiextv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

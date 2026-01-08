@@ -8,7 +8,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"github.com/go-logr/logr"
 	v1 "k8s.io/api/core/v1"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/utils"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/utils"
 	admissionv1 "k8s.io/api/admissionregistration/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	networkingv1 "k8s.io/api/networking/v1"

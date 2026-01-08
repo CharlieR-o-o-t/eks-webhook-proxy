@@ -3,23 +3,23 @@ package main
 
 import (
 	"flag"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/controllers/endpointslice"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/controllers/mutating"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/controllers/validating"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/nodecache"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/proxy"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/controllers/endpointslice"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/controllers/mutating"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/controllers/validating"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/nodecache"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/proxy"
 	"k8s.io/klog/v2"
 	"os"
 
 	"sigs.k8s.io/controller-runtime/pkg/log"
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 
-	crdcontroller "gitlab.wgdp.io/k8s/eks-webhook-proxy/controllers/crd"
+	crdcontroller "github.com/CharlieR-o-o-t/eks-webhook-proxy/controllers/crd"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 
 	"github.com/spf13/pflag"
 
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/config"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/config"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"

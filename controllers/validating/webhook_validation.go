@@ -4,14 +4,14 @@ import (
 	"context"
 	"errors"
 	"github.com/go-logr/logr"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/proxy"
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/pkg/utils"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/proxy"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/pkg/utils"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	"gitlab.wgdp.io/k8s/eks-webhook-proxy/config"
+	"github.com/CharlieR-o-o-t/eks-webhook-proxy/config"
 
 	admissionv1 "k8s.io/api/admissionregistration/v1"
 	ctrl "sigs.k8s.io/controller-runtime"
